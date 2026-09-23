@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml)
 
+
+**Category:** AI in Education
 **Transparent analytics for pedagogical moves, questioning, feedback, and uptake in classroom dialogue.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
@@ -12,7 +14,7 @@
 
 Classroom transcripts contain more than word counts. This repo turns them into interpretable discourse features that can support teacher reflection: questioning depth, feedback moves, learner elaboration, and whether later turns take up earlier ideas.
 
-The engineering goal is simple: make the research logic inspectable. Every metric in the demo can be traced back to a small function, the demo data can be regenerated from a fixed seed, and the limitations are stated next to the claims rather than buried at the end.
+The pipeline keeps speaker roles, pedagogical moves, question depth, feedback, and learner uptake as separate features so classroom summaries remain interpretable and open to review.
 
 ## Research questions
 
@@ -32,7 +34,7 @@ The reference pipeline follows five stages:
 4. **Question-depth scoring**
 5. **Discourse summary**
 
-The current implementation is deliberately compact enough to audit. It is a foundation for a real study, not a theatrical “AI demo.”
+The baseline is designed for inspection first, with room to add validated discourse models, temporal links, and multimodal evidence later.
 
 ## Core outputs
 
