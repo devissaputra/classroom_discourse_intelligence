@@ -1,5 +1,7 @@
 # Classroom Discourse Intelligence
 
+[![CI](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml)
+
 **Transparent analytics for pedagogical moves, questioning, feedback, and uptake in classroom dialogue.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
