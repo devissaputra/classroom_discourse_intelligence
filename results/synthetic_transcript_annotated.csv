@@ -1,0 +1,241 @@
+turn,role,speaker,text,move
+0,student,S3,I think it happens because the input changes.,elaboration
+1,teacher,T,"Good, now consider the evidence in the graph.",feedback
+2,student,S6,I am not sure yet.,other
+3,student,S2,The answer is three.,other
+4,teacher,T,"Good, now consider the evidence in the graph.",feedback
+5,teacher,T,Why do you think that happened?,open_question
+6,student,S6,I think it happens because the input changes.,elaboration
+7,teacher,T,"Good, now consider the evidence in the graph.",feedback
+8,teacher,T,What is the definition?,closed_question
+9,teacher,T,Why do you think that happened?,open_question
+10,student,S1,I am not sure yet.,other
+11,student,S3,"For example, the second case has a lower value.",elaboration
+12,student,S6,"For example, the second case has a lower value.",elaboration
+13,student,S6,I am not sure yet.,other
+14,teacher,T,What is the definition?,closed_question
+15,student,S1,I think it happens because the input changes.,elaboration
+16,teacher,T,Why do you think that happened?,open_question
+17,teacher,T,How would you explain the pattern?,open_question
+18,teacher,T,What is the definition?,closed_question
+19,teacher,T,Why do you think that happened?,open_question
+20,teacher,T,What is the definition?,closed_question
+21,teacher,T,How would you explain the pattern?,open_question
+22,teacher,T,What is the definition?,closed_question
+23,teacher,T,"Good, now consider the evidence in the graph.",feedback
+24,teacher,T,What is the definition?,closed_question
+25,student,S4,I think it happens because the input changes.,elaboration
+26,student,S5,I think it happens because the input changes.,elaboration
+27,student,S1,I am not sure yet.,other
+28,teacher,T,"Good, now consider the evidence in the graph.",feedback
+29,teacher,T,Why do you think that happened?,open_question
+30,teacher,T,How would you explain the pattern?,open_question
+31,teacher,T,How would you explain the pattern?,open_question
+32,teacher,T,Why do you think that happened?,open_question
+33,teacher,T,Try another example because your first one changes two variables.,feedback
+34,student,S5,I am not sure yet.,other
+35,student,S1,I am not sure yet.,other
+36,teacher,T,Why do you think that happened?,open_question
+37,teacher,T,Why do you think that happened?,open_question
+38,teacher,T,Try another example because your first one changes two variables.,feedback
+39,student,S4,I am not sure yet.,other
+40,student,S6,"Building on your idea, the graph also changes after time four.",uptake
+41,teacher,T,What is the definition?,closed_question
+42,student,S5,I am not sure yet.,other
+43,student,S2,"Building on your idea, the graph also changes after time four.",uptake
+44,student,S3,I am not sure yet.,other
+45,student,S3,"Building on your idea, the graph also changes after time four.",uptake
+46,teacher,T,How would you explain the pattern?,open_question
+47,student,S3,I am not sure yet.,other
+48,student,S6,I am not sure yet.,other
+49,student,S5,"Building on your idea, the graph also changes after time four.",uptake
+50,student,S4,I am not sure yet.,other
+51,teacher,T,How would you explain the pattern?,open_question
+52,student,S6,The answer is three.,other
+53,student,S4,The answer is three.,other
+54,teacher,T,Try another example because your first one changes two variables.,feedback
+55,student,S6,"For example, the second case has a lower value.",elaboration
+56,student,S2,"For example, the second case has a lower value.",elaboration
+57,teacher,T,How would you explain the pattern?,open_question
+58,student,S5,I am not sure yet.,other
+59,teacher,T,What is the definition?,closed_question
+60,teacher,T,How would you explain the pattern?,open_question
+61,teacher,T,Try another example because your first one changes two variables.,feedback
+62,student,S5,I am not sure yet.,other
+63,teacher,T,What is the definition?,closed_question
+64,teacher,T,How would you explain the pattern?,open_question
+65,student,S3,I think it happens because the input changes.,elaboration
+66,student,S6,"For example, the second case has a lower value.",elaboration
+67,student,S6,"For example, the second case has a lower value.",elaboration
+68,student,S3,"For example, the second case has a lower value.",elaboration
+69,teacher,T,How would you explain the pattern?,open_question
+70,student,S2,"Building on your idea, the graph also changes after time four.",uptake
+71,student,S3,"For example, the second case has a lower value.",elaboration
+72,student,S2,"For example, the second case has a lower value.",elaboration
+73,student,S6,I am not sure yet.,other
+74,student,S1,"Building on your idea, the graph also changes after time four.",uptake
+75,teacher,T,What is the definition?,closed_question
+76,teacher,T,Why do you think that happened?,open_question
+77,teacher,T,"Good, now consider the evidence in the graph.",feedback
+78,student,S1,The answer is three.,other
+79,teacher,T,"Good, now consider the evidence in the graph.",feedback
+80,student,S1,"Building on your idea, the graph also changes after time four.",uptake
+81,teacher,T,Try another example because your first one changes two variables.,feedback
+82,student,S1,I am not sure yet.,other
+83,student,S4,"Building on your idea, the graph also changes after time four.",uptake
+84,student,S2,I am not sure yet.,other
+85,student,S1,The answer is three.,other
+86,teacher,T,Try another example because your first one changes two variables.,feedback
+87,teacher,T,How would you explain the pattern?,open_question
+88,student,S4,The answer is three.,other
+89,student,S4,"Building on your idea, the graph also changes after time four.",uptake
+90,student,S6,I am not sure yet.,other
+91,student,S5,I think it happens because the input changes.,elaboration
+92,teacher,T,Try another example because your first one changes two variables.,feedback
+93,teacher,T,"Good, now consider the evidence in the graph.",feedback
+94,teacher,T,Try another example because your first one changes two variables.,feedback
+95,student,S5,The answer is three.,other
+96,teacher,T,Why do you think that happened?,open_question
+97,teacher,T,What is the definition?,closed_question
+98,teacher,T,How would you explain the pattern?,open_question
+99,teacher,T,Try another example because your first one changes two variables.,feedback
+100,teacher,T,"Good, now consider the evidence in the graph.",feedback
+101,teacher,T,"Good, now consider the evidence in the graph.",feedback
+102,student,S5,"Building on your idea, the graph also changes after time four.",uptake
+103,student,S2,The answer is three.,other
+104,student,S6,"For example, the second case has a lower value.",elaboration
+105,teacher,T,"Good, now consider the evidence in the graph.",feedback
+106,teacher,T,What is the definition?,closed_question
+107,teacher,T,What is the definition?,closed_question
+108,teacher,T,Why do you think that happened?,open_question
+109,teacher,T,Try another example because your first one changes two variables.,feedback
+110,student,S4,The answer is three.,other
+111,student,S4,I am not sure yet.,other
+112,student,S6,"Building on your idea, the graph also changes after time four.",uptake
+113,teacher,T,Why do you think that happened?,open_question
+114,student,S5,"Building on your idea, the graph also changes after time four.",uptake
+115,student,S5,"Building on your idea, the graph also changes after time four.",uptake
+116,teacher,T,Try another example because your first one changes two variables.,feedback
+117,student,S6,The answer is three.,other
+118,student,S4,"Building on your idea, the graph also changes after time four.",uptake
+119,teacher,T,What is the definition?,closed_question
+120,student,S1,I think it happens because the input changes.,elaboration
+121,student,S5,I am not sure yet.,other
+122,teacher,T,"Good, now consider the evidence in the graph.",feedback
+123,student,S1,"Building on your idea, the graph also changes after time four.",uptake
+124,teacher,T,What is the definition?,closed_question
+125,teacher,T,How would you explain the pattern?,open_question
+126,student,S1,I think it happens because the input changes.,elaboration
+127,student,S3,I am not sure yet.,other
+128,teacher,T,Why do you think that happened?,open_question
+129,student,S3,"For example, the second case has a lower value.",elaboration
+130,student,S6,I think it happens because the input changes.,elaboration
+131,teacher,T,"Good, now consider the evidence in the graph.",feedback
+132,teacher,T,Try another example because your first one changes two variables.,feedback
+133,student,S2,The answer is three.,other
+134,teacher,T,"Good, now consider the evidence in the graph.",feedback
+135,student,S1,I am not sure yet.,other
+136,teacher,T,Why do you think that happened?,open_question
+137,student,S4,I am not sure yet.,other
+138,student,S4,"For example, the second case has a lower value.",elaboration
+139,student,S6,The answer is three.,other
+140,teacher,T,How would you explain the pattern?,open_question
+141,teacher,T,"Good, now consider the evidence in the graph.",feedback
+142,teacher,T,How would you explain the pattern?,open_question
+143,teacher,T,What is the definition?,closed_question
+144,student,S3,"For example, the second case has a lower value.",elaboration
+145,teacher,T,"Good, now consider the evidence in the graph.",feedback
+146,teacher,T,Try another example because your first one changes two variables.,feedback
+147,teacher,T,How would you explain the pattern?,open_question
+148,student,S4,"For example, the second case has a lower value.",elaboration
+149,student,S4,I am not sure yet.,other
+150,teacher,T,What is the definition?,closed_question
+151,student,S6,"Building on your idea, the graph also changes after time four.",uptake
+152,teacher,T,Try another example because your first one changes two variables.,feedback
+153,teacher,T,"Good, now consider the evidence in the graph.",feedback
+154,student,S2,I am not sure yet.,other
+155,teacher,T,How would you explain the pattern?,open_question
+156,student,S5,"For example, the second case has a lower value.",elaboration
+157,student,S3,"Building on your idea, the graph also changes after time four.",uptake
+158,teacher,T,Why do you think that happened?,open_question
+159,teacher,T,"Good, now consider the evidence in the graph.",feedback
+160,teacher,T,"Good, now consider the evidence in the graph.",feedback
+161,student,S4,"For example, the second case has a lower value.",elaboration
+162,student,S1,The answer is three.,other
+163,teacher,T,How would you explain the pattern?,open_question
+164,teacher,T,"Good, now consider the evidence in the graph.",feedback
+165,student,S6,I am not sure yet.,other
+166,teacher,T,What is the definition?,closed_question
+167,teacher,T,Why do you think that happened?,open_question
+168,teacher,T,How would you explain the pattern?,open_question
+169,student,S3,"For example, the second case has a lower value.",elaboration
+170,teacher,T,"Good, now consider the evidence in the graph.",feedback
+171,student,S5,I am not sure yet.,other
+172,teacher,T,Try another example because your first one changes two variables.,feedback
+173,student,S2,"Building on your idea, the graph also changes after time four.",uptake
+174,student,S5,The answer is three.,other
+175,teacher,T,Try another example because your first one changes two variables.,feedback
+176,student,S1,"Building on your idea, the graph also changes after time four.",uptake
+177,student,S1,"For example, the second case has a lower value.",elaboration
+178,teacher,T,Try another example because your first one changes two variables.,feedback
+179,teacher,T,Try another example because your first one changes two variables.,feedback
+180,teacher,T,How would you explain the pattern?,open_question
+181,student,S4,The answer is three.,other
+182,student,S4,I think it happens because the input changes.,elaboration
+183,student,S1,I am not sure yet.,other
+184,teacher,T,How would you explain the pattern?,open_question
+185,student,S1,I am not sure yet.,other
+186,teacher,T,"Good, now consider the evidence in the graph.",feedback
+187,student,S5,I think it happens because the input changes.,elaboration
+188,student,S5,I think it happens because the input changes.,elaboration
+189,student,S4,The answer is three.,other
+190,teacher,T,What is the definition?,closed_question
+191,teacher,T,"Good, now consider the evidence in the graph.",feedback
+192,teacher,T,What is the definition?,closed_question
+193,teacher,T,"Good, now consider the evidence in the graph.",feedback
+194,student,S4,"Building on your idea, the graph also changes after time four.",uptake
+195,student,S6,I am not sure yet.,other
+196,teacher,T,"Good, now consider the evidence in the graph.",feedback
+197,teacher,T,Try another example because your first one changes two variables.,feedback
+198,teacher,T,"Good, now consider the evidence in the graph.",feedback
+199,teacher,T,How would you explain the pattern?,open_question
+200,teacher,T,Try another example because your first one changes two variables.,feedback
+201,student,S3,"Building on your idea, the graph also changes after time four.",uptake
+202,teacher,T,"Good, now consider the evidence in the graph.",feedback
+203,student,S4,I am not sure yet.,other
+204,teacher,T,How would you explain the pattern?,open_question
+205,student,S3,I am not sure yet.,other
+206,teacher,T,How would you explain the pattern?,open_question
+207,student,S3,I think it happens because the input changes.,elaboration
+208,teacher,T,"Good, now consider the evidence in the graph.",feedback
+209,student,S6,"Building on your idea, the graph also changes after time four.",uptake
+210,teacher,T,Why do you think that happened?,open_question
+211,student,S6,"Building on your idea, the graph also changes after time four.",uptake
+212,student,S4,"Building on your idea, the graph also changes after time four.",uptake
+213,student,S4,I think it happens because the input changes.,elaboration
+214,student,S2,The answer is three.,other
+215,student,S1,I think it happens because the input changes.,elaboration
+216,teacher,T,Try another example because your first one changes two variables.,feedback
+217,teacher,T,Why do you think that happened?,open_question
+218,teacher,T,"Good, now consider the evidence in the graph.",feedback
+219,teacher,T,How would you explain the pattern?,open_question
+220,student,S3,I am not sure yet.,other
+221,student,S5,"Building on your idea, the graph also changes after time four.",uptake
+222,student,S2,I think it happens because the input changes.,elaboration
+223,student,S1,I am not sure yet.,other
+224,student,S2,I am not sure yet.,other
+225,teacher,T,"Good, now consider the evidence in the graph.",feedback
+226,student,S4,The answer is three.,other
+227,student,S6,I think it happens because the input changes.,elaboration
+228,student,S3,I am not sure yet.,other
+229,teacher,T,Try another example because your first one changes two variables.,feedback
+230,student,S5,"Building on your idea, the graph also changes after time four.",uptake
+231,teacher,T,Try another example because your first one changes two variables.,feedback
+232,teacher,T,"Good, now consider the evidence in the graph.",feedback
+233,student,S3,I am not sure yet.,other
+234,teacher,T,What is the definition?,closed_question
+235,teacher,T,Why do you think that happened?,open_question
+236,student,S4,The answer is three.,other
+237,teacher,T,Try another example because your first one changes two variables.,feedback
+238,teacher,T,"Good, now consider the evidence in the graph.",feedback
+239,teacher,T,Why do you think that happened?,open_question
