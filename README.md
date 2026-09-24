@@ -12,7 +12,7 @@
 
 ## Why this project exists
 
-Classroom transcripts contain more than word counts. This repo turns them into interpretable discourse features that can support teacher reflection: questioning depth, feedback moves, learner elaboration, and whether later turns take up earlier ideas.
+Classroom transcripts contain more than word counts. This repo turns them into interpretable discourse features that can support teacher reflection: questioning depth, feedback moves, learner elaboration, and explicit uptake language.
 
 The pipeline keeps speaker roles, pedagogical moves, question depth, feedback, and learner uptake as separate features so classroom summaries remain interpretable and open to review.
 
@@ -20,7 +20,7 @@ The pipeline keeps speaker roles, pedagogical moves, question depth, feedback, a
 
 1. Which pedagogical moves dominate a lesson segment?
 2. How often do questions invite explanation rather than recall?
-3. How much teacher feedback elicits learner elaboration or uptake?
+3. How frequently do teacher feedback, learner elaboration, and uptake moves appear?
 
 ## What the repository does
 
