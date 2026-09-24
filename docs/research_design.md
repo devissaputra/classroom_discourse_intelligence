@@ -2,13 +2,13 @@
 
 ## Project aim
 
-Classroom transcripts contain more than word counts. This repo turns them into interpretable discourse features that can support teacher reflection: questioning depth, feedback moves, learner elaboration, and whether later turns take up earlier ideas.
+Classroom transcripts contain more than word counts. This repo turns them into interpretable discourse features that can support teacher reflection: questioning depth, feedback moves, learner elaboration, and explicit uptake language.
 
 ## Research questions
 
 1. Which pedagogical moves dominate a lesson segment?
 2. How often do questions invite explanation rather than recall?
-3. How much teacher feedback elicits learner elaboration or uptake?
+3. How frequently do teacher feedback, learner elaboration, and uptake moves appear?
 
 ## Baseline analytic pipeline
 
