@@ -83,7 +83,7 @@ classroom_discourse_intelligence/
 
 ## Research design in one picture
 
-![Research map](docs/images/research_map.png)
+![Research map](docs/images/research_map.svg)
 
 The fuller design rationale is in [`docs/research_design.md`](docs/research_design.md), including constructs, assumptions, validation steps, and a proposed empirical extension.
 
