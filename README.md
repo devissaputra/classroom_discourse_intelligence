@@ -1,120 +1,109 @@
-# Classroom Discourse Intelligence
+# Classroom Discourse Intelligence — Research Bundle
 
 [![CI](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml)
 
-**Category:** AI in Education  
-**Transparent descriptive analytics for pedagogical moves, questioning, feedback, elaboration, and uptake in classroom dialogue.**
+**Research Bundle · AI in Education · real classroom discourse and talk-move classification**
 
-> Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
+This repository now uses the **TalkMoves** corpus as its empirical foundation. TalkMoves contains 567 human-annotated K–12 mathematics lesson transcripts derived from real classroom video, with speaker segmentation and sentence-level discursive-move annotations.
 
-![Architecture](docs/images/architecture.svg)
+The previous synthetic transcript is retained only as a tiny software demonstration. It is not research evidence.
 
-## Why this project exists
+## Research question
 
-Classroom transcripts contain more than word counts. This repository turns transcript rows into interpretable descriptive features that can support teacher reflection: questioning depth, feedback moves, learner elaboration, uptake language, and teacher-talk share.
+> How much signal can a transparent lexical baseline recover for human-annotated **teacher talk moves** when entire transcripts, rather than individual utterances, are held out from training?
 
-The pipeline keeps these signals separate so summaries remain interpretable. The current implementation reports **frequencies**, not temporal “followed-by” effects and not causal relationships between discourse moves.
+A second question is equally important:
 
-## Research questions
+> How much does the learned model improve over the training-set majority class when macro-F1, not accuracy alone, is emphasized under class imbalance?
 
-1. Which pedagogical moves appear most often in a lesson segment?
-2. What share of tagged questions invite explanation rather than recall?
-3. How frequently do feedback, learner elaboration, and uptake moves appear?
+## Why transcript-held-out evaluation
 
-## What the repository does
+Random utterance splitting can place language from the same classroom transcript in both train and test sets. That can inflate apparent generalization.
 
-![Pipeline](docs/images/pipeline.svg)
+This bundle therefore splits at the **transcript level** using a fixed group-aware protocol:
+- 64% train transcripts;
+- 16% validation transcripts;
+- 20% final test transcripts;
+- seed 42.
 
-The implemented pipeline follows five stages:
+The validation partition is reserved for future model/hyperparameter selection. The current transparent baseline is specified in advance.
 
-1. **Transcript**
-2. **Speaker roles and transparent move tagging**
-3. **Question-rate calculation**
-4. **Feedback, elaboration, and uptake-rate calculation**
-5. **Descriptive discourse summary**
+## Real dataset
 
-The baseline is designed for inspection first, with temporal links and multimodal evidence left explicitly for future work.
+**TalkMoves: K-12 Mathematics Lesson Transcripts Annotated for Teacher and Student Discursive Moves**  
+Suresh et al., LREC 2022.
 
-## Core outputs
+The corpus contains:
+- 567 human-annotated lesson transcripts;
+- human transcription;
+- teacher/student speaker segmentation;
+- sentence-level annotations for ten discursive moves across teacher and student discourse.
 
-- `teacher_talk_share`
-- `open_question_rate`
-- `feedback_rate`
-- `learner_elaboration_rate`
-- `uptake_rate`
+This research bundle currently benchmarks the **teacher-label subset** using the coding scheme exposed by the official preprocessing notebook.
 
-![Synthetic demo dashboard](docs/images/demo_dashboard.svg)
+Dataset license: **CC BY-NC-SA 4.0**. This is a non-commercial research dataset. See [data/README.md](data/README.md).
 
-The dashboard is generated from **synthetic data** and is included only to demonstrate the analysis surface. It does not report temporal effects or empirical teaching outcomes.
+## Empirical models
 
-## Quick start
+### Majority baseline
+Always predicts the most frequent teacher-label class in the training set.
+
+### TF-IDF logistic baseline
+- word 1–2 grams;
+- maximum 50,000 features;
+- minimum document frequency 2;
+- class-balanced multinomial-capable logistic regression;
+- no transcript text from the test partition is used for fitting.
+
+This is intentionally simpler than a Transformer. It creates a credible floor before adding model complexity.
+
+## Evaluation
+
+Primary:
+- macro-F1
+
+Secondary:
+- weighted-F1
+- accuracy
+- per-class precision/recall/F1
+- confusion matrix
+- class support
+
+Macro-F1 is primary because the human talk-move labels are imbalanced.
+
+## Run
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -e .[dev]
-python examples/demo.py
-pytest -q
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/run_research.py
 ```
 
-You can also use Docker:
+The runner downloads the publicly available TalkMoves archive from the K–12 AI Infrastructure dataset service, caches it locally, extracts the Excel transcripts, reproduces the official teacher-tag normalization, and writes `results/research_metrics.json`.
 
-```bash
-docker build -t classroom_discourse_intelligence .
-docker run --rm classroom_discourse_intelligence
-```
+## Existing descriptive analytics
 
-## Repository structure
+The original transparent discourse-summary functions remain in `src/classroom_discourse_intelligence/core.py` because they are useful for corpus exploration. They are **not** treated as validated human talk-move classifiers.
 
-```text
-classroom_discourse_intelligence/
-├── src/classroom_discourse_intelligence/  # core implementation and synthetic-data generator
-├── examples/demo.py                       # end-to-end reproducible demo
-├── tests/                                 # executable unit tests
-├── docs/                                  # research design, data dictionary, references
-│   └── images/                            # auditable project diagrams
-├── results/                               # synthetic demo outputs only
-├── config/default.yaml
-├── Dockerfile
-├── Makefile
-└── pyproject.toml
-```
+## What makes this a Research Bundle
 
-## Research design in one picture
+- authentic human classroom data;
+- human annotation target;
+- published dataset and citation;
+- non-commercial license boundary;
+- transcript-held-out split;
+- explicit majority baseline;
+- interpretable lexical model;
+- imbalance-aware primary metric;
+- per-class error analysis;
+- reproducible download/cleaning adapter;
+- ethics and teacher-evaluation prohibition;
+- tests and CI;
+- paper-ready research protocol.
 
-![Research map](docs/images/research_map.svg)
+See [RESEARCH_BUNDLE.md](RESEARCH_BUNDLE.md).
 
-The fuller design rationale is in [`docs/research_design.md`](docs/research_design.md), including constructs, assumptions, validation steps, and a proposed empirical extension.
+## Responsible-use boundary
 
-## Reproducibility choices
-
-- Synthetic generation uses a fixed random seed.
-- The core metrics are implemented as small, testable functions.
-- The demo writes machine-readable results into `results/`.
-- CI runs the tests on every push and pull request.
-- No API keys, proprietary datasets, or external model calls are required for the baseline.
-
-## Responsible-use boundaries
-
-- Text-only transcripts omit gaze, gesture, timing, prosody, and classroom context.
-- Move labels are transparent baselines rather than validated teaching-quality scores.
-- The intended use is reflective analytics; the system should not be used for automated teacher evaluation.
-- The current baseline does not estimate temporal or causal effects between moves.
-
-## Strong next experiments
-
-- Add explicit temporal windows linking teacher moves to later learner elaboration and evaluate them as associations before making stronger claims.
-- Fuse audio or gaze features only with explicit consent and privacy safeguards.
-- Compare transparent rules with a fine-tuned language model and conduct human-centered explanation studies.
-
-## References
-
-See [`docs/references.md`](docs/references.md). The references locate the project in current AIED, learning-analytics, human-centered AI, and instructional-design research. They do **not** imply endorsement or affiliation.
-
-## Citation
-
-If you build on this research prototype, use the metadata in [`CITATION.cff`](CITATION.cff).
-
-## License
-
-MIT for the code in this repository. Research data from future studies should use a separate data-governance and consent process.
+This repository is for research and aggregate discourse analysis. It must **not** be used to rank teachers, make employment decisions, score individual students, or deliver unsupervised evaluative feedback. Talk-move occurrence is not equivalent to teaching quality, and transcript text omits gesture, timing, prosody, classroom history and pedagogical intent.

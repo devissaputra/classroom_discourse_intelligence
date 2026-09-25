@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-<title id="title">Classroom Discourse Intelligence architecture</title>
-<desc id="desc">Synthetic transcript rows are tagged with speaker roles and transparent pedagogical-move rules, then summarized with open-question, feedback, learner-elaboration, uptake, and teacher-talk rates.</desc>
-<rect width="1200" height="675" fill="#f8fafc"/>
-<text x="60" y="78" font-family="Arial" font-size="38" font-weight="700" fill="#0f172a">Classroom Discourse Intelligence · implemented architecture</text>
-<text x="60" y="116" font-family="Arial" font-size="20" fill="#64748b">Descriptive transcript analytics for teacher reflection</text>
-<g font-family="Arial" text-anchor="middle">
-<rect x="60" y="215" width="230" height="150" rx="18" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/><text x="175" y="260" font-size="20" font-weight="700" fill="#1e3a8a">Transcript rows</text><text x="175" y="302" font-size="17" fill="#334155">role · text</text>
-<rect x="350" y="215" width="230" height="150" rx="18" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/><text x="465" y="255" font-size="20" font-weight="700" fill="#166534">Move tagging</text><text x="465" y="297" font-size="17" fill="#334155">question · feedback</text><text x="465" y="325" font-size="17" fill="#334155">elaboration · uptake</text>
-<rect x="640" y="215" width="230" height="150" rx="18" fill="#ecfeff" stroke="#22d3ee" stroke-width="2"/><text x="755" y="255" font-size="20" font-weight="700" fill="#155e75">Rate calculation</text><text x="755" y="297" font-size="17" fill="#334155">independent frequencies</text><text x="755" y="325" font-size="17" fill="#334155">by role/move</text>
-<rect x="930" y="215" width="210" height="150" rx="18" fill="#f3e8ff" stroke="#c084fc" stroke-width="2"/><text x="1035" y="255" font-size="20" font-weight="700" fill="#6b21a8">Discourse summary</text><text x="1035" y="300" font-size="17" fill="#334155">reflection metrics</text>
-</g>
-<g stroke="#64748b" stroke-width="4"><path d="M290 290H350"/><path d="M580 290H640"/><path d="M870 290H930"/></g>
-<rect x="145" y="455" width="910" height="120" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
-<text x="600" y="500" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700" fill="#0f172a">Interpretation boundary</text>
-<text x="600" y="538" text-anchor="middle" font-family="Arial" font-size="19" fill="#475569">The current code reports frequencies only; it does not test whether one discourse move causes or follows another.</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520"><rect width="1200" height="520" fill="#f8f8f6"/><text x="55" y="70" font-family="Arial" font-size="36" font-weight="700">TalkMoves Research Bundle</text><g font-family="Arial" font-size="21"><rect x="55" y="150" width="230" height="105" rx="12" fill="#e5edf2"/><text x="85" y="205">567 transcripts</text><rect x="330" y="150" width="230" height="105" rx="12" fill="#e5edf2"/><text x="360" y="195">Human teacher</text><text x="360" y="225">talk-move labels</text><rect x="605" y="150" width="230" height="105" rx="12" fill="#e5edf2"/><text x="635" y="195">Transcript-held</text><text x="635" y="225">out split</text><rect x="880" y="150" width="260" height="105" rx="12" fill="#e5edf2"/><text x="910" y="195">Majority vs TF-IDF</text><text x="910" y="225">logistic baseline</text><text x="55" y="350">Primary metric: macro-F1 · no teacher-quality claim · non-commercial dataset license</text></g></svg>

@@ -1,7 +1,7 @@
-# References and research context
+# References
 
-- Bueno, I. et al. (2026). *From Scoring to Explanations: Evaluating SHAP and LLM Rationales for Rubric-based Teaching Quality Assessment*. Findings of ACL 2026. https://aclanthology.org/2026.findings-acl.375/
-- Yan, L. et al. (2024). *Evidence-based multimodal learning analytics for feedback and reflection in collaborative learning*. https://research.monash.edu/en/publications/evidence-based-multimodal-learning-analytics-for-feedback-and-ref/
-- Alfredo, R. et al. (2024). *Human-centred learning analytics and AI in education: A systematic literature review*. Computers and Education: Artificial Intelligence, 6, 100215. https://doi.org/10.1016/j.caeai.2024.100215
+Suresh, A., Jacobs, J., Harty, C., Perkoff, M., Martin, J. H., & Sumner, T. (2022). The TalkMoves Dataset: K-12 Mathematics Lesson Transcripts Annotated for Teacher and Student Discursive Moves. *Proceedings of LREC 2022*, 4654–4662. https://aclanthology.org/2022.lrec-1.497/
 
-These references motivated the problem framing. The code and visualisations in this repository are original project material.
+Suresh, A., Jacobs, J., Lai, V., Tan, C., Ward, W., Martin, J., & Sumner, T. (2021). Using AI to Promote Equitable Classroom Discussions: The TalkMoves Application. AIED 2021.
+
+The present repository's TF-IDF model is a new transparent baseline and should not be confused with the contextual models reported by the TalkMoves authors.

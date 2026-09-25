@@ -1,25 +1,19 @@
-# Experiment roadmap
+# Experiment Registry
 
-## E0 — Reproducibility baseline
+## RB-01 — Transparent real-data baseline
+**Status:** executable  
+**Data:** TalkMoves  
+**Split:** transcript-held-out  
+**Models:** majority; TF-IDF logistic regression  
+**Primary metric:** macro-F1  
+**Output:** `results/research_metrics.json`
 
-Run the bundled synthetic experiment from a clean environment and verify that unit tests and stored metrics are reproducible.
+## RB-02 — Contextual encoder
+**Status:** proposed, not implemented  
+Must reuse the exact RB-01 split groups or a persisted equivalent split manifest.
 
-## E1 — Measurement audit
+## RB-03 — Teacher-disjoint evaluation
+**Status:** proposed, not implemented  
+Requires reliable teacher identity metadata rather than filename guessing.
 
-Challenge the operational definitions in the baseline. Compare alternative feature definitions, quantify missingness, and document which conclusions change.
-
-## E2 — Model or policy ablation
-
-Remove one information source or decision rule at a time. Report not only headline performance but the cases that changed and why.
-
-## E3 — Robustness
-
-Stress-test thresholds, seeds, subgroup composition, measurement noise, and distribution shift. Report confidence intervals rather than a single number.
-
-## E4 — Human-centered evaluation
-
-Put the output in front of the people expected to use it. Measure comprehension, trust calibration, actionability, and failure recovery instead of asking only whether they “liked” the interface.
-
-## E5 — Field validation
-
-Only after the previous steps, evaluate the system in an authentic learning setting with appropriate ethics and data-governance procedures.
+Synthetic demo outputs are not registered experiments.

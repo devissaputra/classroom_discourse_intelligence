@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "classroom-discourse-intelligence"
-version = "0.1.0"
-description = "Transparent analytics for pedagogical moves, questioning, feedback, and uptake in classroom dialogue."
+version = "0.2.0"
+description = "Research Bundle for transcript-held-out talk-move classification and transparent classroom discourse analytics."
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{name = "Devis W. Saputra"}]
-dependencies = ["numpy>=1.26","pandas>=2.0","scikit-learn>=1.4","matplotlib>=3.8","PyYAML>=6.0"]
+dependencies = ["numpy>=1.26","pandas>=2.0","scikit-learn>=1.4","matplotlib>=3.8","PyYAML>=6.0","openpyxl>=3.1"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0","ruff>=0.6"]

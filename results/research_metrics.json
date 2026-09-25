@@ -1,0 +1,7 @@
+{
+  "research_bundle": true,
+  "status": "regenerate_required",
+  "message": "Run scripts/run_research.py to download TalkMoves and generate transcript-held-out empirical metrics.",
+  "dataset": "TalkMoves",
+  "license": "CC BY-NC-SA 4.0"
+}
