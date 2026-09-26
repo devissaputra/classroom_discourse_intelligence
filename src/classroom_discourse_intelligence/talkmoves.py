@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import re
+import hashlib
+import json
 import zipfile
 from pathlib import Path
 from urllib.request import urlopen
@@ -34,7 +36,7 @@ def download_and_extract(cache_dir: str | Path):
     return extracted
 
 def load_teacher_utterances(root: str | Path):
-    rows=[]; skipped=[]
+    rows=[]; skipped=[]; seen_records=set()
     for path in sorted(Path(root).rglob("*.xlsx")):
         if path.name.startswith("~"):
             continue
@@ -47,6 +49,7 @@ def load_teacher_utterances(root: str | Path):
         if not required.issubset(frame.columns):
             skipped.append({"file":str(path),"reason":"missing_required_columns"})
             continue
+        transcript_rows=[]
         for _,row in frame.iterrows():
             label=parse_teacher_tag(row.get("Teacher Tag"))
             text=row.get("Sentence")
@@ -55,7 +58,19 @@ def load_teacher_utterances(root: str | Path):
             text=str(text).strip()
             if not text:
                 continue
-            rows.append({"text":text,"label":int(label),"transcript":path.name})
+            transcript_rows.append({"text":text,"label":int(label)})
+        if not transcript_rows:
+            continue
+        # Deduplicate archive copies by content, not filename. Two copies with
+        # different filenames must never become independent train/test groups.
+        record_key=hashlib.sha256(json.dumps(transcript_rows,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+        if record_key in seen_records:
+            skipped.append({"file":str(path.relative_to(root)),"reason":"duplicate_transcript_content"})
+            continue
+        seen_records.add(record_key)
+        # Copies with the same text but revised annotations still share a group.
+        text_key=hashlib.sha256(json.dumps([r["text"] for r in transcript_rows],ensure_ascii=False).encode()).hexdigest()
+        rows.extend({**row,"transcript":text_key,"source_file":str(path.relative_to(root))} for row in transcript_rows)
     if not rows:
         raise ValueError("no labeled teacher utterances were parsed")
     return pd.DataFrame(rows),skipped

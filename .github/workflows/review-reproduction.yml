@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/review-reproduction.yml'
+      - 'src/classroom_discourse_intelligence/talkmoves.py'
+      - 'scripts/run_research.py'
   workflow_dispatch:
 permissions:
   contents: read

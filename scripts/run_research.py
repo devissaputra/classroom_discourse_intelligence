@@ -1,3 +1,4 @@
+import hashlib
 import json
 import sys
 from collections import Counter
@@ -45,6 +46,9 @@ def main():
     result={
         "research_bundle":True,
         "dataset":"TalkMoves",
+        "status":"complete_content_grouped",
+        "archive_sha256":hashlib.sha256((ROOT/".cache/talkmoves/talkmoves.zip").read_bytes()).hexdigest(),
+        "group_definition":"SHA-256 of ordered teacher utterance texts; exact text-label duplicate transcripts removed",
         "source":"Suresh et al., LREC 2022",
         "license":"CC BY-NC-SA 4.0",
         "seed":SEED,
