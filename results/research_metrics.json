@@ -1,7 +1,2574 @@
 {
   "research_bundle": true,
-  "status": "regenerate_required",
-  "message": "Run scripts/run_research.py to download TalkMoves and generate transcript-held-out empirical metrics.",
   "dataset": "TalkMoves",
-  "license": "CC BY-NC-SA 4.0"
+  "status": "complete_content_grouped",
+  "archive_sha256": "461e9f1570113a604060c4933b96a2e2cb6900ad417caffe16003d41de4d0e5f",
+  "group_definition": "SHA-256 of ordered teacher utterance texts; exact text-label duplicate transcripts removed",
+  "source": "Suresh et al., LREC 2022",
+  "license": "CC BY-NC-SA 4.0",
+  "seed": 42,
+  "parsed_utterances": 175129,
+  "parsed_transcripts": 565,
+  "skipped_files": [
+    {
+      "file": "/home/runner/work/classroom_discourse_intelligence/classroom_discourse_intelligence/.cache/talkmoves/extracted/Datasheet for Public Release.xlsx",
+      "reason": "missing_required_columns"
+    },
+    {
+      "file": "Subset 1/Video Mosaic Grade 4 Models to Compare Fractions 2.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/7th grade math.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Boats and Fish 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Boats and Fish 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Boats and Fish 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Boats and Fish 4_Grade 4 .xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Borko.TranscriptofWholeClassDebrief.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/CECILIO DIMAS pt 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/CECILIO DIMAS pt 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/CECILIO DIMAS pt 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Comparing Fractions 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Comparing Fractions 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Comparing Fractions 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Comparing Fractions 4_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Comparing Fractions 5_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Fraction as Number 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Fraction as Number 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Fraction as Number 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Fraction as Number 4_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Fraction as Number 5_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Fraction as Number 6_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Gang of Four_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSEN pt 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSEN pt 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSEN pt 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSEN pt 5.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSEN pt 6_.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSEN pt 7_.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSEN pt1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/HILLARY LEWIS-WOLFSON pt 8.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Intro Quadratic Equations_Grade 6.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Introducing Integers_Grade 6.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Jeffs group 1_first grade.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Jeffs group 2_first grade.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Jeffs group 3_first grade.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ladder problem 1_ Grade 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ladder problem 2_Grade 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ladder problem 3_Grade 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ladder problem 4_Grade 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ladder problem 5_Grade 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ladder problem 6_Grade 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ladder problem 7_Grade 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/MOLLY MCNINCH pt 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/MOLLY MCNINCH pt 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/MOLLY MCNINCH pt 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/MOLLY MCNINCH pt 5.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/MOLLY MCNINCH pt 6.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/MOLLY MCNINch pt 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Maher_Equivalence 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Maher_Equivalence 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Maher_Fractions_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Martino Fraction Equivalence 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Martino Fraction Equivalence 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Martino Fraction Equivalence 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Martino Fraction Equivalence 4_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math AU 1 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math AU 2 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math AU 3 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math AU 4 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math CZ1 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math CZ2 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math CZ3 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math CZ4 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math HK1 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math HK2 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math HK3 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math HK4 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math JP1 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math JP2 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math JP3 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math JP4 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math NL1 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math NL2 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math NL3 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math NL4 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math SW1 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math SW2 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math SW3 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math SW4 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math US1 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math US2 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math US3 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Math US4 transcript.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Norway Teacher_grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Number Lines 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Number line models 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Number line models 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Number line models 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Number line models 4_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Number lines 2_grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Number lines 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Problem 1 part a.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Problem 1 part b.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Problem 1 part c.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/QMT training lesson.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ribbons 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ribbons 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Ribbons 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Same or Different.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Stephanies group 1_first grade.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Stephanies group 2_first grade.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Surface area and volume_Grade 8.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/TRACY LEWIS pt 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Towers 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Towers 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Towers 3_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Towers 4_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Towers 5_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic 11th grade pizza 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic 11th grade pizza.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic 12th grade taxicab.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 3 Shirts and Pants 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 3 Shirts and Pants 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Alans Infinity.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Building large models 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Building large models 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Building large models 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Division of Fractions 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Division of Fractions 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Division of Fractions 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 5.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 6.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Generating Models 8.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Infinite Number Line 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Infinite Number Line 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Infinite Number Line 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Infinite Number Line 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Intro Fraction Comparison 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Intro Fraction Comparison 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Intro Fraction Comparison 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Intro Fraction Comparison 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Intro Fraction Comparison 5.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Intro Fraction Comparison 6.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Large Model equivalence 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Large Model equivalence 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Large Model equivalence 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Models to Compare Fractions 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Models to Compare Fractions 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Models to Compare Fractions 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Models to Compare Fractions 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Models to Compare Fractions 5.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 4 Number line and fractions.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 10.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 11.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 5.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 6.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 8.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 1 variable 9.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 10.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 11.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 12.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 13.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 14.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 15.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 16.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 17.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 18.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 5.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 8.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 2 variables 9.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 6 Dice.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 5 .xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 6.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 7.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosaic Grade 7 Guess Rule 8.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosiac 11th grade Pascal 1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosiac 11th grade World Series 2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/Video Mosiac 11th grade World Series.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/What is one half 1_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/What is one half 2_Grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/What is one half 3_grade 4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/transcript_for_ms_noonan_managing_transitions.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset1_WithDialogActs/transcript_graphing_with_colors.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Baker.Fall.121019-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Baker.Fall.121019-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Baker.Spring.012120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Baker.Spring.013120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Baker.Spring.022820.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Barry.Spring.011420-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Barry.Spring.011420-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Barry.Spring.011520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Barry.Spring.013120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Barry.Spring.021120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Barry.Spring.030220-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Barry.Spring.030220-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Benson.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Benson.Spring.011320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Benson.Spring.011420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Benson.Spring.011620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Benson.Spring.020520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Benson.Spring.022020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Benson.Spring.022120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Fall.121119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.010920-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.010920-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.012920-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.012920-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.013020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.021020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.021920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carroll.Spring.030320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Fall.120619.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Fall.121119-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Fall.121119-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Fall.121619.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Spring.011020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Spring.011320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Spring.011420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Spring.012220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Spring.012320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Spring.012420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Carter.Spring.012920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Cornish.Fall.112119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Cornish.Fall.121119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Cornish.Fall.121219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Cornish.Spring.010920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Cornish.Spring.011420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Cornish.Spring.030220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Cornish.Spring.030420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.100319.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.100719.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.101019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.102519.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.111119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.120419.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.120519.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Fall.121119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Spring.010920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Spring.021020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Spring.021120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Spring.031020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Davies.Spring.031120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Fall.100419.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Fall.100819.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Fall.120319-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Fall.120319-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Fall.121219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Spring.010920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Spring.011420-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Spring.011420-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gautier.Spring.031020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Fall.120619.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Fall.121219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Fall.121319.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Fall.121619.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Fall.121719-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Fall.121719-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Spring.011620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Spring.012320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Spring.012720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Spring.013020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Spring.013120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Spring.020320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Gibson.Spring.030220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Fall.120619-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Fall.120619-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Spring.010720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Spring.011020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Spring.012420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Spring.022020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Spring.022420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Spring.022720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Keene.Spring.030620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Fall.120619.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Fall.120919.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Fall.121119-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Fall.121119-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Fall.121219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Fall.121619.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Spring.010320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Spring.011420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Spring.012320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Spring.012720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Koski.Spring.020520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Fall.112219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Fall.120319_.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Fall.120419.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Fall.121119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Spring.010920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Spring.012420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Spring.022520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Spring.030320-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Spring.030320-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Levy.Spring.120319.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Fall.112219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Fall.120319.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Spring.010920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Spring.011320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Spring.011520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Spring.012420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Spring.021120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Parker.Spring.033020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Reeves.Fall.121119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Reeves.Spring.011420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Reeves.Spring.022620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Rossi.Fall.121919.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Rossi.Spring.011520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Rossi.Spring.011920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Rossi.Spring.012720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.012320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.012420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.020320-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.020320-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.020520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.020620-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.020620-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.020720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.021020-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.021020-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.021820(1).xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.021820.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Saunders.Spring.022020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Fall.111919.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Fall.120319.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Fall.120919.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Spring.010720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Spring.011320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Spring.011620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Spring.012120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Spring.012720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Spring.021820.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Smith.Spring.030220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.120619-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.120619-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.120919.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.121119.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.121219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.121319.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Fall.121619.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.011320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.011420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.011620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.012320-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.012320-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.012920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.013020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.020320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.020520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.022420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.030220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.030420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Strathom.Spring.031020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Fall.120919.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Fall.121019.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Fall.121219.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Fall.121819.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.011620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.012120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.012420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.013020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.020520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.022120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.022820.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Tolliver.Spring.031220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.010920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.011020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.012220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.012720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.012920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.020620-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.020620-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.020620-3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.022120-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.022120-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.022620.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Travers.Spring.030520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.010920-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.010920-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.011420-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.011420-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.011520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.012120-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.012120-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.013120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.021120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.021220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.021920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year1.Wolfram.Spring.030920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Barry.Fall.121120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Barry.Fall.121420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Fall.111920-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Fall.111920-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Fall.120920-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Fall.120920-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Fall.120920-3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Fall.120920-4.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Spring.011921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Spring.020521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Spring.030121-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Spring.030121-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Spring.030121-3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Cornish.Spring.040521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.012221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.012621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.012721-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.012721-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.012921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.020321-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.020321-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.020521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.020921-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.020921-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.021021.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.021621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.022621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.030221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.030521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.031021-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.031021-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.031021-3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.042121-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.042121-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Davies.Spring.042721.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.110520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.111220-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.111220-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.111320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.111720.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.111820.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.111920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.120120.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.120220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Fall.121020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.012521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.012621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.012721.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.020221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.020921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.022321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.030221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.030521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.031221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.042021.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.042121.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.042821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gautier.Spring.051921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.041521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Fall.091820.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.012721.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.012821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.020121-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.020121-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.020221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.020321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.020421.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.020521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.020821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.021121.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.022321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.022621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.030121.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.030221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.030521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.031721.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.033021.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.040221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.040621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.040821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.041221-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Gibson.Spring.041221-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.012721.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.021821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.021921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.022221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.022321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.022621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.030221-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.030221-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.031721-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.031721-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.040221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.040521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.040621-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.040621-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.041321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.041521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Koski.Spring.041921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Levy.Fall.111220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Levy.Spring.020321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Levy.Spring.042121.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Parker.Fall.110320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Parker.Fall.110920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Parker.Fall.111020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Parker.Fall.111320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Parker.Spring.030921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Parker.Spring.033121.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Parker.Spring.041920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Reeves.042921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.101920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.102220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.102320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.103020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.110520.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.111020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.111220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Fall.111920.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.021721.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.022221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.041921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.042121.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.042221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.042821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.050421.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.081321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Smith.Spring.102320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.102020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.102220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.102320.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.103020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.112020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.120220.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.120420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Fall.121020.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.010821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.011321-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.011321-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.012121.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.012621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.020221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.020421.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.020821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.021821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.021921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.022321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.022621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.030221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.030421.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.033121-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.033121-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.040221.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.040621.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.040821.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.040921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.041521.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Spring.042921.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Strathom.Sprint.050421.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Tolliver.011321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Tolliver.Fall.120420.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Tolliver.Fall.120820.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Tolliver.Spring.022321.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Wolfram.Fall.121720-1.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Wolfram.Fall.121720-2.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "Subset2_WithDialogActs/TalkBack.Year2.Wolfram.Fall.121720-3.xlsx_with_dialog_acts.xlsx",
+      "reason": "duplicate_transcript_content"
+    },
+    {
+      "file": "/home/runner/work/classroom_discourse_intelligence/classroom_discourse_intelligence/.cache/talkmoves/extracted/test_data_63.xlsx",
+      "reason": "missing_required_columns"
+    },
+    {
+      "file": "/home/runner/work/classroom_discourse_intelligence/classroom_discourse_intelligence/.cache/talkmoves/extracted/train_data_504.xlsx",
+      "reason": "missing_required_columns"
+    }
+  ],
+  "label_distribution": {
+    "0": 117684,
+    "1": 22835,
+    "2": 2876,
+    "3": 2634,
+    "4": 4012,
+    "5": 23050,
+    "6": 2038
+  },
+  "splits": {
+    "train": {
+      "utterances": 107460,
+      "transcripts": 361
+    },
+    "validation": {
+      "utterances": 29349,
+      "transcripts": 91
+    },
+    "test": {
+      "utterances": 38320,
+      "transcripts": 113
+    }
+  },
+  "no_transcript_overlap": true,
+  "majority_baseline": {
+    "majority_label": 0,
+    "accuracy": 0.6752870563674321,
+    "macro_f1": 0.11516782048115289,
+    "weighted_f1": 0.5443993693667941,
+    "classification_report": {
+      "0": {
+        "precision": 0.6752870563674321,
+        "recall": 1.0,
+        "f1-score": 0.8061747433680702,
+        "support": 25877.0
+      },
+      "1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 4858.0
+      },
+      "2": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 501.0
+      },
+      "3": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 601.0
+      },
+      "4": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 901.0
+      },
+      "5": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 5110.0
+      },
+      "6": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 472.0
+      },
+      "accuracy": 0.6752870563674321,
+      "macro avg": {
+        "precision": 0.09646957948106173,
+        "recall": 0.14285714285714285,
+        "f1-score": 0.11516782048115289,
+        "support": 38320.0
+      },
+      "weighted avg": {
+        "precision": 0.4560126084973915,
+        "recall": 0.6752870563674321,
+        "f1-score": 0.5443993693667941,
+        "support": 38320.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        25877,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        4858,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        501,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        601,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        901,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5110,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        472,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "tfidf_logistic": {
+    "accuracy": 0.677713987473904,
+    "macro_f1": 0.5197545500996746,
+    "weighted_f1": 0.7195836953371006,
+    "classification_report": {
+      "0": {
+        "precision": 0.9201355027459837,
+        "recall": 0.6927773698651312,
+        "f1-score": 0.7904320987654321,
+        "support": 25877.0
+      },
+      "1": {
+        "precision": 0.5117705242334323,
+        "recall": 0.5325236722931247,
+        "f1-score": 0.521940885705639,
+        "support": 4858.0
+      },
+      "2": {
+        "precision": 0.34056603773584904,
+        "recall": 0.720558882235529,
+        "f1-score": 0.46252402306213963,
+        "support": 501.0
+      },
+      "3": {
+        "precision": 0.15117056856187291,
+        "recall": 0.7520798668885191,
+        "f1-score": 0.25174046226677804,
+        "support": 601.0
+      },
+      "4": {
+        "precision": 0.10079726651480637,
+        "recall": 0.39289678135405104,
+        "f1-score": 0.16043507817811012,
+        "support": 901.0
+      },
+      "5": {
+        "precision": 0.695232994108195,
+        "recall": 0.7620352250489236,
+        "f1-score": 0.7271029782466623,
+        "support": 5110.0
+      },
+      "6": {
+        "precision": 0.6381260096930533,
+        "recall": 0.836864406779661,
+        "f1-score": 0.7241063244729606,
+        "support": 472.0
+      },
+      "accuracy": 0.677713987473904,
+      "macro avg": {
+        "precision": 0.4796855576561703,
+        "recall": 0.6699623149235628,
+        "f1-score": 0.5197545500996746,
+        "support": 38320.0
+      },
+      "weighted avg": {
+        "precision": 0.7959984113124482,
+        "recall": 0.677713987473904,
+        "f1-score": 0.7195836953371006,
+        "support": 38320.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        17927,
+        1992,
+        295,
+        1710,
+        2630,
+        1183,
+        140
+      ],
+      [
+        848,
+        2587,
+        192,
+        520,
+        298,
+        390,
+        23
+      ],
+      [
+        25,
+        54,
+        361,
+        7,
+        7,
+        38,
+        9
+      ],
+      [
+        44,
+        19,
+        2,
+        452,
+        73,
+        11,
+        0
+      ],
+      [
+        289,
+        50,
+        11,
+        152,
+        354,
+        44,
+        1
+      ],
+      [
+        341,
+        346,
+        182,
+        149,
+        147,
+        3894,
+        51
+      ],
+      [
+        9,
+        7,
+        17,
+        0,
+        3,
+        41,
+        395
+      ]
+    ]
+  },
+  "primary_metric": "macro_f1"
 }

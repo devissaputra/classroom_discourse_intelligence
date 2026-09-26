@@ -1,30 +1,62 @@
 {
   "question": "Can teacher talk moves be classified across transcripts?",
-  "data": "TalkMoves adapter and protocol; committed empirical metrics currently require regeneration.",
-  "method": "Transcript-disjoint train/validation/test; majority baseline versus TF-IDF logistic regression.",
+  "data": "TalkMoves: 175,129 teacher utterances; 565 content-defined transcript groups.",
+  "method": "Remove exact text-label transcript duplicates; group by ordered text hash; compare majority and TF-IDF logistic baselines on transcript-held-out data.",
   "formula": "Macro-F1 = mean(classwise 2×precision×recall/(precision+recall)).",
-  "interpretation": "No completed empirical score is committed. The synthetic descriptive demo is a separate workflow. Talk-move occurrence is not teaching quality; dataset access and a successful full run are still required.",
-  "status": "EMPIRICAL RUN PENDING | illustrative calculations only",
-  "source": "results/review_examples.json",
+  "interpretation": "Exact text-label duplicate transcripts are removed. Transcripts with identical ordered text share a split group even if annotations differ. This prevents identical copies from crossing partitions, but does not establish teacher-, school- or near-duplicate-disjoint evaluation. One split and one model configuration limit generalization.",
+  "status": "EXTERNAL-DATA STUDY | content-grouped reproduction succeeded",
+  "source": "results/research_metrics.json",
   "rows": [
     {
-      "label": "teacher share",
+      "label": "majority_baseline accuracy",
       "path": [
-        "outputs",
-        "teacher share"
+        "majority_baseline",
+        "accuracy"
       ],
-      "unit": "unitless"
+      "unit": "score ↑"
     },
     {
-      "label": "open question fraction",
+      "label": "majority_baseline macro_f1",
       "path": [
-        "outputs",
-        "open question fraction"
+        "majority_baseline",
+        "macro_f1"
       ],
-      "unit": "unitless"
+      "unit": "score ↑"
+    },
+    {
+      "label": "majority_baseline weighted_f1",
+      "path": [
+        "majority_baseline",
+        "weighted_f1"
+      ],
+      "unit": "score ↑"
+    },
+    {
+      "label": "tfidf_logistic accuracy",
+      "path": [
+        "tfidf_logistic",
+        "accuracy"
+      ],
+      "unit": "score ↑"
+    },
+    {
+      "label": "tfidf_logistic macro_f1",
+      "path": [
+        "tfidf_logistic",
+        "macro_f1"
+      ],
+      "unit": "score ↑"
+    },
+    {
+      "label": "tfidf_logistic weighted_f1",
+      "path": [
+        "tfidf_logistic",
+        "weighted_f1"
+      ],
+      "unit": "score ↑"
     }
   ],
-  "table_title": "Worked example — illustrative, not a measured research result",
-  "evidence_note": "Illustrative inputs and calculations are in scripts/review_examples.py.",
-  "finding": "This repository implements a transcript-held-out TalkMoves study comparing a majority baseline with TF-IDF logistic regression for teacher talk-move classification. The protocol uses macro-F1 to expose minority-class behavior, but its committed empirical metrics currently say regeneration is required, so the study is not presented as completed. A separate synthetic demo illustrates descriptive discourse rules without establishing teacher quality or classroom validity."
+  "table_title": "Content-grouped held-out comparison: 38,320 utterances",
+  "evidence_note": "GitHub Actions run 36250532574; seed 42; macro-F1 is the primary metric.",
+  "finding": "This TalkMoves study compares a majority baseline with TF-IDF logistic regression for teacher talk-move classification. The completed run removes duplicate transcript copies and groups matching transcript text before splitting, yielding 565 content-defined transcript groups and 175,129 labeled teacher utterances. On 113 held-out groups, logistic regression achieves macro-F1 0.5198 versus 0.1152 for the majority baseline, while accuracy remains similar. These results concern coded discourse moves, not teaching quality."
 }

@@ -1,3 +1,5 @@
+> Completed content-grouped run: https://github.com/devissaputra/classroom_discourse_intelligence/actions/runs/36250532574. The analysis uses 565 unique teacher-text groups after exact duplicate removal; earlier filename-grouped scores are superseded. See CALCULATIONS.md at the repository root.
+
 # Dataset Card — TalkMoves
 
 ## Source
