@@ -1,0 +1,8 @@
+{
+  "kind": "illustrative_calculation",
+  "note": "Illustrative four-turn arithmetic; no TalkMoves model result.",
+  "outputs": {
+    "teacher share": 0.5,
+    "open question fraction": 1.0
+  }
+}

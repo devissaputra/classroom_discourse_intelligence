@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Macro-F1 = mean(classwise 2×precision×recall/(precision+recall)).
+# No completed empirical score is committed. The synthetic descriptive demo is a separate workflow. Talk-move occurrence is not teaching quality; dataset access and a successful full run are still required.
+
 from __future__ import annotations
 import re,pandas as pd
 

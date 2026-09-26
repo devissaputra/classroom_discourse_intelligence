@@ -1,0 +1,30 @@
+{
+  "question": "Can teacher talk moves be classified across transcripts?",
+  "data": "TalkMoves adapter and protocol; committed empirical metrics currently require regeneration.",
+  "method": "Transcript-disjoint train/validation/test; majority baseline versus TF-IDF logistic regression.",
+  "formula": "Macro-F1 = mean(classwise 2×precision×recall/(precision+recall)).",
+  "interpretation": "No completed empirical score is committed. The synthetic descriptive demo is a separate workflow. Talk-move occurrence is not teaching quality; dataset access and a successful full run are still required.",
+  "status": "EMPIRICAL RUN PENDING | illustrative calculations only",
+  "source": "results/review_examples.json",
+  "rows": [
+    {
+      "label": "teacher share",
+      "path": [
+        "outputs",
+        "teacher share"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "open question fraction",
+      "path": [
+        "outputs",
+        "open question fraction"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Worked example — illustrative, not a measured research result",
+  "evidence_note": "Illustrative inputs and calculations are in scripts/review_examples.py.",
+  "finding": "This repository implements a transcript-held-out TalkMoves study comparing a majority baseline with TF-IDF logistic regression for teacher talk-move classification. The protocol uses macro-F1 to expose minority-class behavior, but its committed empirical metrics currently say regeneration is required, so the study is not presented as completed. A separate synthetic demo illustrates descriptive discourse rules without establishing teacher quality or classroom validity."
+}

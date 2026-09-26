@@ -1,10 +1,26 @@
-# Classroom Discourse Intelligence — Research Bundle
+# Classroom Discourse Intelligence —
+
+This repository implements a transcript-held-out TalkMoves study comparing a majority baseline with TF-IDF logistic regression for teacher talk-move classification. The protocol uses macro-F1 to expose minority-class behavior, but its committed empirical metrics currently say regeneration is required, so the study is not presented as completed. A separate synthetic demo illustrates descriptive discourse rules without establishing teacher quality or classroom validity.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** The existing suite requires unavailable dependencies; no full-suite pass is claimed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
 
 [![CI](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/classroom_discourse_intelligence/actions/workflows/ci.yml)
 
 **Research Bundle · AI in Education · real classroom discourse and talk-move classification**
 
-This repository now uses the **TalkMoves** corpus as its empirical foundation. TalkMoves contains 567 human-annotated K–12 mathematics lesson transcripts derived from real classroom video, with speaker segmentation and sentence-level discursive-move annotations.
+This repository implements an adapter and planned empirical protocol for the **TalkMoves** corpus. The committed metrics are marked `regenerate_required`; no completed TalkMoves experiment is claimed. TalkMoves contains 567 human-annotated K–12 mathematics lesson transcripts derived from real classroom video, with speaker segmentation and sentence-level discursive-move annotations.
 
 The previous synthetic transcript is retained only as a tiny software demonstration. It is not research evidence.
 
@@ -86,7 +102,7 @@ The runner downloads the publicly available TalkMoves archive from the K–12 AI
 
 The original transparent discourse-summary functions remain in `src/classroom_discourse_intelligence/core.py` because they are useful for corpus exploration. They are **not** treated as validated human talk-move classifiers.
 
-## What makes this a Research Bundle
+## Implemented protocol and pending evidence
 
 - authentic human classroom data;
 - human annotation target;
